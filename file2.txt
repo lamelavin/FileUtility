@@ -1,0 +1,38 @@
+Testing :
+
+create :
+
+input -
+
+create
+create file.txt
+create file.txt "Hello world"
+create file.txt "Hello world
+create "file"
+create file "Hello world"
+create file "hello world
+
+erdir :
+
+input
+
+erdir
+erdir folder
+erdir folder "hello"
+erdir "folder"
+erdir "folder" hello
+erdir "folder" "hello"
+erdir "folder
+
+erase :
+
+input -
+
+erase
+erase file.txt
+erase "file.txt"
+
+crdir :
+
+same as erdir
+

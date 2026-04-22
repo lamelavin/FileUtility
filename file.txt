@@ -1,0 +1,22 @@
+I will be able to do it and I will do it.
+God is for me, with me, and within me.
+
+Note for tomorrow :
+
+There is a problem with folder command, whenever I try to create a folder by giving a path to it, so it simply just doesn't. Solve it first then move
+(done)
+
+
+Commands :
+
+create - create file (done)
+crdir - create folder (done)
+erase - delete file (done)
+erdir - delete folder (basic delete rn, will implement force delete later) (done partially)
+sort - for sorting based on the arguments (dates, file size, A-Z or a-z) (done)
+empty - truncate a file (done)
+read - reading the content from file (done)
+list - list content of a directory (also implement flags type shi) (done partially)
+sd - switch directories (hardest one yet) (done)
+mv - move or rename (done)
+find - search within directories
