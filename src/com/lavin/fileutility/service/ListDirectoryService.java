@@ -37,7 +37,7 @@ public class ListDirectoryService {
 //        }
 //    }
 
-    public void listDirectory(String directoryName) throws FileNotFoundException {
+    public void listDirectory(String directoryName, String flag) throws FileNotFoundException {
 
         CurrentDirectory ctx = new CurrentDirectory(); // safe now (no reset)
 
@@ -58,6 +58,10 @@ public class ListDirectoryService {
 
         try (DirectoryStream<Path> stream = Files.newDirectoryStream(absPath)) {
             for (Path entry : stream) {
+                if (!flag.equalsIgnoreCase("-h")) {
+                    if (Files.isHidden(entry))
+                        continue;
+                }
                 if (Files.isDirectory(entry)) {
                     System.out.println(BLUE + entry.getFileName() + "    " + RESET);
                 } else {
